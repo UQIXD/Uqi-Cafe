@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="img/coffee.png" type="image/x-icon" />
+    <title>Uqi Cafe</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alkalami&family=Calligraffitti&family=Passions+Conflict&family=Silkscreen&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="css/ik.css" />
+    <link rel="stylesheet" href="css/Order.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark" data-aos="fade-down">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img
+              src="img/UqiCafe.png"
+              alt="Bootstrap"
+              width="236"
+              height="94"
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="true"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="navbar-nav ms-auto">
+              <a href="#" class="nav-link">Home</a>
+              <a href="#carouselExampleControls" class="nav-link">Menu</a>
+              <a href="#Gallery" class="nav-link">Galery</a>
+              <a href="#footer" class="nav-link">Contact</a>
+              <a href="css/Order.css" class="btn tombol">Order Online</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+    <!-- section Body -->
+
+    <div
+      id="carouselExampleControls"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-inner" data-aos="fade-up" data-aos-duration="1500">
+        <div class="carousel-item active">
+          <img src="img/GroupPancake.png" class="d-block w-100" alt="..." />
+        </div>
+        <div class="carousel-item">
+          <img src="img/GroupPK.png" class="d-block w-100" alt="..." />
+        </div>
+        <div class="carousel-item">
+          <img src="img/GroupKentang.png" class="d-block w-100" alt="..." />
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleControls"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleControls"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <section class="cafe" id="Gallery">
+      <div class="container">
+        <div class="row">
+          <p class="labelA">Galerry Cafe</p>
+          <h1 class="headA">Top Values For You</h1>
+          <p class="desc">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid
+            veritatis id neque, qui voluptatibus, adipisci itaque, minus
+            incidunt modi exercitationem alias. Suscipit quibusdam error fuga.
+            Corrupti tempora eveniet, natus facilis.
+          </p>
+        </div>
+        <div class="row kotak" data-aos="fade-up">
+          <div class="col-4">
+            <div class="kotak-A">
+              <img src="img/coffee-shop.png" alt="" />
+              <h3>Cafe</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
+                iste aliquam mollitia rerum vel velit totam tempore aut cum
+                amet, ullam ducimus ratione in ipsam odio repudiandae, rem
+                distinctio recusandae!
+              </p>
+              <!-- <div class="btn-more">
+            <a href="" class="btn btn-dark"></a>
+          </div> -->
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="kotak-A">
+              <img src="img/barista.png" alt="" />
+              <h3>Barista</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
+                iste aliquam mollitia rerum vel velit totam tempore aut cum
+                amet, ullam ducimus ratione in ipsam odio repudiandae, rem
+                distinctio recusandae!
+              </p>
+              <!-- <div class="btn-more">
+            <a href="" class="btn btn-dark"></a>
+          </div> -->
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="kotak-A">
+              <img src="img/bar.png" alt="" />
+              <h3>Interior</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
+                iste aliquam mollitia rerum vel velit totam tempore aut cum
+                amet, ullam ducimus ratione in ipsam odio repudiandae, rem
+                distinctio recusandae!
+              </p>
+              <!-- <div class="btn-more">
+            <a href="" class="btn btn-dark"></a>
+          </div> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="fil">
+      <h2>Gallery Uqi Cafe</h2>
+      <div id="myBtnContainer">
+        <button class="btn tomb" onclick="filterSelection('all')">
+          Show all
+        </button>
+        <button class="btn tomb" onclick="filterSelection('Cafe')">Cafe</button>
+        <button class="btn tomb" onclick="filterSelection('Barista')">
+          Barista
+        </button>
+        <button class="btn tomb" onclick="filterSelection('Interior')">
+          Interior
+        </button>
+      </div>
+
+      <!-- Portfolio Gallery Grid -->
+      <div class="container-fluid filterg">
+        <div class="row" data-aos="fade-up">
+          <div class="column Cafe">
+            <div class="content">
+              <img src="img/Cafe1.jpg" alt="Mountains" style="width: 100%" />
+              <h4>The Lamp</h4>
+              <p>Lorem ipsum dolor..</p>
+            </div>
+          </div>
+          <div class="column Cafe">
+            <div class="content">
+              <img src="img/Cafe2.jpg" alt="Lights" style="width: 100%" />
+              <h4>The Coffe</h4>
+              <p>Lorem ipsum dolor..</p>
+            </div>
+          </div>
+          <div class="column Cafe">
+            <div class="content">
+              <img src="img/Cafe3.jpg" alt="Nature" style="width: 100%" />
+              <h4>The Cafe</h4>
+              <p>Lorem ipsum dolor..</p>
+            </div>
+          </div>
+          <div class="column Barista">
+            <div class="content">
+              <img src="img/Barista.jpg" alt="Car" style="width: 100%" />
+              <h4>Alex</h4>
+              <p>Lorem ipsum dolor..</p>
+            </div>
+          </div>
+          <div class="column Barista">
+            <div class="content">
+              <img src="img/Barista2.jpg" alt="Car" style="width: 100%" />
+              <h4>Audrey</h4>
+              <p>Lorem ipsum dolor..</p>
+            </div>
+          </div>
+          <div class="column Barista">
+            <div class="content">
+              <img src="img/Barista1.jpg" alt="Car" style="width: 100%" />
+              <h4 id="sumb">Muhammad Sumbul</h4>
+              <p>Lorem ipsum dolor..</p>
+            </div>
+          </div>
+          <div class="column Interior">
+            <div class="content">
+              <img src="img/Interior1.jpg" alt="People" style="width: 100%" />
+              <h4>Store Front</h4>
+              <p>Lorem ipsum dolor..</p>
+            </div>
+          </div>
+          <div class="column Interior">
+            <div class="content">
+              <img src="img/Interior2.jpg" alt="People" style="width: 100%" />
+              <h4>Second Floor</h4>
+              <p>Lorem ipsum dolor..</p>
+            </div>
+          </div>
+          <div class="column Interior">
+            <div class="content">
+              <img src="img/Interior6.jpg" alt="People" style="width: 100%" />
+              <h4>The Main</h4>
+              <p>Lorem ipsum dolor..</p>
+            </div>
+          </div>
+          <!-- END GRID -->
+        </div>
+      </div>
+    </section>
+    <footer class="p-0 m-0" id="footer">
+      <div class="footer-top d-flex align-items-center">
+        <div class="container footertop">
+          <div class="row foot">
+            <div class="col-6">
+              <p class="logof">Uqi Cafe</p>
+            </div>
+            <div class="col-6 cont">
+              <p class="ct">Contact</p>
+              <a href="">
+                <img src="img/whatsapp.png" alt="" id="wa" class="lg" />
+                <p class="log text-decoration-none">087689354678</p>
+              </a>
+              <a href="">
+                <img src="img/instagram.png" alt="" id="ig" class="lg" />
+                <p class="log text-decoration-none">Uqi Cafe</p>
+              </a>
+              <a href="">
+                <img src="img/gmail.png" alt="" id="gmail" class="lg" />
+                <p class="log text-decoration-none">faruqirabbani3@gmail.com</p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span class="p-0 m-auto d-block">© Uqi Cafe</span>
+      </div>
+    </footer>
+
+    <script>
+      //Get the button:
+      let mybutton = document.getElementById("myBtn");
+
+      // When the user scrolls down 20px from the top of the document, show the button
+      window.onscroll = function () {
+        scrollFunction();
+      };
+
+      function scrollFunction() {
+        if (
+          document.body.scrollTop > 20 ||
+          document.documentElement.scrollTop > 20
+        ) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+
+      // When the user clicks on the button, scroll to the top of the document
+      function topFunction() {
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+      }
+    </script>
+
+    <script>
+      filterSelection("all");
+      function filterSelection(c) {
+        var x, i;
+        x = document.getElementsByClassName("column");
+        if (c == "all") c = "";
+        for (i = 0; i < x.length; i++) {
+          w3RemoveClass(x[i], "show");
+          if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+        }
+      }
+
+      function w3AddClass(element, name) {
+        var i, arr1, arr2;
+        arr1 = element.className.split(" ");
+        arr2 = name.split(" ");
+        for (i = 0; i < arr2.length; i++) {
+          if (arr1.indexOf(arr2[i]) == -1) {
+            element.className += " " + arr2[i];
+          }
+        }
+      }
+
+      function w3RemoveClass(element, name) {
+        var i, arr1, arr2;
+        arr1 = element.className.split(" ");
+        arr2 = name.split(" ");
+        for (i = 0; i < arr2.length; i++) {
+          while (arr1.indexOf(arr2[i]) > -1) {
+            arr1.splice(arr1.indexOf(arr2[i]), 1);
+          }
+        }
+        element.className = arr1.join(" ");
+      }
+
+      // Add active class to the current button (highlight it)
+      var btnContainer = document.getElementById("myBtnContainer");
+      var btns = btnContainer.getElementsByClassName("btn");
+      for (var i = 0; i < btns.length; i++) {
+        btns[i].addEventListener("click", function () {
+          var current = document.getElementsByClassName("active");
+          current[0].className = current[0].className.replace(" active", "");
+          this.className += " active";
+        });
+      }
+    </script>
+
+    <script src="src/index.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
